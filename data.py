@@ -28,7 +28,7 @@ class PolypGenFLDataset(Dataset):
         image_paths = []
         mask_paths = []
         
-        centers = ['1', '2', '3', '4', '5', '6'] if self.center == 'all' else [self.center]
+        centers = ['1', '2', '3', '4', '5'] if self.center == 'all' else [self.center]
         for center in centers:
             center_path = os.path.join(self.data_path, f'data_C{center}')
             images_path = os.path.join(center_path, f'images_C{center}')
